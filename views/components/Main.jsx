@@ -5,10 +5,7 @@ const Main = () => {
   return (
     <Layout>
       <div className="container">
-        <div className="container_title">
-          <h1 className="title">Quiz game</h1>
-        </div>
-        <form action="/game" method="POST" name="startGame">
+        <form action="/game" method="GET" name="startGame">
           <label htmlFor="i1">Введи своё имя, бро</label>
           <input type="text" id="i1" />
           <button type="submit" className="btn">

@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
+/* only dsrk theme style не трогайте плес */
+
 body {
   --text-color: #222;
   --bkg-color: #fff;
@@ -34,8 +36,14 @@ span {
   color: var(--text-color);
 }
 
+/* only dsrk theme style не трогайте плес */
+
 .title {
   font-family: 'Bowlby One SC', cursive;
+}
+
+.wrapper {
+  position: relative;
 }
 
 .container {
@@ -44,7 +52,6 @@ span {
   align-items: center;
   flex-wrap: wrap;
   width: 60%;
-  height: 400px;
   margin: 50px auto;
 }
 
@@ -72,8 +79,11 @@ label {
   font-size: 20px;
 }
 
+
+/* checkbox dsrk theme */
 .controls {
-  margin-top: 400px;
+  position: static;
+  margin-top: 0px;
   margin-left: 20px;
   color: var(--text-color);
 }
@@ -82,12 +92,16 @@ label {
   cursor: pointer;
 }
 
+/* checkbox dsrk theme */
+
 .btn {
+  font-family: 'Russo One', sans-serif;
   cursor: pointer;
   width: 20%;
   margin-top: 10px;
   transition: 0.2s;
   height: 40px;
+  color: #222;
 }
 
 .btn:hover {
@@ -97,6 +111,39 @@ label {
 
 /* select game page style */
 
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
 
+.topic {
+  display: block;
+  width: 100%;
+  height: 80px;
+  background: var(--bkg-color);
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: var(--text-color);
+  font-size: 24px;
+  line-height: 80px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  /* transition: 0.5s; */
+}
+
+.topic:hover {
+  transform: scale(0.9);
+  filter: brightness(0.95)
+}
+
+.topic-box {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.topic-box :last-child {
+  margin-top: 10px;
+}
 
 /* game container style */
