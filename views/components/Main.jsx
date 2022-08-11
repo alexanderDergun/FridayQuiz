@@ -9,6 +9,9 @@ const Main = () => {
         <input type="text" id="i1" />
         <button type="submit">enter</button>
       </form>
+      <div className="test">
+        <button className="btn-toggle">Dark mode</button>
+      </div>
     </Layout>
   );
 };
