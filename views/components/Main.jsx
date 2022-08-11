@@ -9,14 +9,12 @@ const Main = () => {
           <h1 className="title">Quiz game</h1>
         </div>
         <form action="/game" method="POST" name="startGame">
-          <label htmlFor="i1">Enter your name</label>
+          <label htmlFor="i1">Введи своё имя, бро</label>
           <input type="text" id="i1" />
-          <button type="submit">enter</button>
+          <button type="submit" className="btn">
+            клик
+          </button>
         </form>
-        <div className="test">
-          <input type="checkbox" className="btn-toggle" />
-          <span>Dark mode</span>
-        </div>
       </div>
     </Layout>
   );

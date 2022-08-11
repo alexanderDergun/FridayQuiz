@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 body {
   --text-color: #222;
   --bkg-color: #fff;
+  font-family: 'Russo One', sans-serif;
 }
 
 body.dark-theme {
@@ -37,10 +39,13 @@ span {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
   width: 60%;
   height: 400px;
   margin: 50px auto;
-  border: 1px solid white;
 }
 
 .container_title {
@@ -52,8 +57,40 @@ form {
   width: 80%;
   margin: 10px auto;
   color: var(--text-color);
+  text-align: center;
 }
 
-input {
+label {
+  font-size: 22px;
+}
+
+#i1 {
+  padding: 10px;
+  width: 80%;
   margin: 0px auto;
+  outline: none;
+  font-size: 20px;
+}
+
+.controls {
+  margin-top: 400px;
+  margin-left: 20px;
+  color: var(--text-color);
+}
+
+.btn-toggle {
+  cursor: pointer;
+}
+
+.btn {
+  cursor: pointer;
+  width: 20%;
+  margin-top: 10px;
+  transition: 0.2s;
+  height: 40px;
+}
+
+.btn:hover {
+  transform: scale(0.95);
+  filter: brightness(0.9);
 }
