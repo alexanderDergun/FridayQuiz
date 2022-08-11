@@ -1,6 +1,6 @@
 const React = require("react");
 
-const React = ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <html lang="en">
       <head>
