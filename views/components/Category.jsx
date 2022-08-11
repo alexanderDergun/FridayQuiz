@@ -6,9 +6,8 @@ const Category = ({ props }) => {
     <Layout>
       <ul>
         {props.map((el) => (
-          <li key={props.id}>
-            {" "}
-            <a href="/">{props.topic}</a>{" "}
+          <li key={el.id}>
+            <a href={`${el.id}`}>{el.topic}</a>
           </li>
         ))}
       </ul>
