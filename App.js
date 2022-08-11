@@ -4,6 +4,7 @@ const chalk = require("chalk");
 const config = require("./config/config");
 
 const mainRouter = require('./routes/MainRouter');
+const gameRouter = require('./routes/GameRouter');
 
 
 config(app);
@@ -11,5 +12,6 @@ config(app);
 const PORT = process.env.PORT ?? 3000;
 
 app.use('/', mainRouter);
+app.use('/game', gameRouter);
 
 app.listen(PORT, () => console.log(chalk.bgBlue(" Здарова братик! ")));

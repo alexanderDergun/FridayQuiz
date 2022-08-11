@@ -1,11 +1,11 @@
 const React = require("react");
 const Layout = require("../Layout");
 
-const Category = ({ props }) => {
+const Category = ({ arrCategories }) => {
   return (
     <Layout>
       <ul>
-        {props.map((el) => (
+        {arrCategories.map((el) => (
           <li key={el.id}>
             <a href={`${el.id}`}>{el.topic}</a>
           </li>
