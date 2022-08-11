@@ -1,10 +1,17 @@
 const React = require("react");
 const Layout = require("../Layout");
 
-const Game = () => {
+const Game = ({ props }) => {
   return (
     <Layout>
-      <h1>kek</h1>
+      <div className="game">
+        <div className="game_title">{props.title}</div>
+        <div className="questions_box">
+          {props.map((el) => (
+            <div className="question">{props.question}</div>
+          ))}
+        </div>
+      </div>
     </Layout>
   );
 };

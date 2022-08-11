@@ -156,3 +156,30 @@ a {
 }
 
 /* game style */
+
+.game {
+  min-width: 50%;
+  min-height: 300px;
+  border: 1px solid black;
+}
+
+.game_title {
+  text-align: center;
+}
+
+.questions_box {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+}
+
+.question {
+  width: 49%;
+  height: 100px;
+  text-align: center;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
