@@ -1,6 +1,6 @@
 const React = require("react");
 
-const React = ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <html lang="en">
       <head>
@@ -16,4 +16,4 @@ const React = ({ children }) => {
   );
 };
 
-module.exports = React;
+module.exports = Layout;
