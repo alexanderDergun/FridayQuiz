@@ -16,4 +16,4 @@ const Layout = ({ children }) => {
   );
 };
 
-module.exports = React;
+module.exports = Layout;
