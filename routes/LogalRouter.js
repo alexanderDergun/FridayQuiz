@@ -1,7 +1,6 @@
 const logalRouter = require('express').Router();
 const { User } = require('../db/models')
 
-const Category = require('../views/components/Category.jsx');
 
 
 logalRouter.post('/game', async (req, res) => {
@@ -14,6 +13,7 @@ logalRouter.post('/game', async (req, res) => {
         score: 0,
         })  
     }
+
 
 })
 

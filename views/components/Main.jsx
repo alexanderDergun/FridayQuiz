@@ -4,7 +4,7 @@ const Layout = require("../Layout");
 const Main = () => {
   return (
     <Layout>
-      <form action="/game" method="POST" name="startGame">
+      <form action="/game" method="get" name="startGame">
         <label htmlFor="i1"></label>
         <input type="text" id="i1" />
         <button type="submit">enter</button>
