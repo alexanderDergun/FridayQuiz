@@ -7,7 +7,7 @@ const Category = ({ arrCategories, name }) => {
       <div className="greeting">Привет, {name}</div>
       <div className="topic-box">
         {arrCategories.map((el) => (
-          <a className="topic" href={`${el.id}`} key={el.id}>
+          <a className="topic" href={`/game/${el.id}`} key={el.id}>
             {el.topic}
           </a>
         ))}
