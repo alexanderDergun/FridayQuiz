@@ -1,10 +1,10 @@
 const React = require("react");
 const Layout = require("../Layout");
 
-const Category = ({ arrCategories, userName }) => {
+const Category = ({ arrCategories, name }) => {
   return (
     <Layout>
-      <div className="greeting">Привет, заглушка</div>
+      <div className="greeting">Привет, {name}</div>
       <div className="topic-box">
         {arrCategories.map((el) => (
           <a className="topic" href={`${el.id}`} key={el.id}>

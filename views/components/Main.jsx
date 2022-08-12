@@ -5,9 +5,9 @@ const Main = () => {
   return (
     <Layout>
       <div className="container">
-        <form action="/game" method="GET" name="startGame">
+        <form action="/game" method="POST" name="startGame">
           <label htmlFor="i1">Введи своё имя, бро</label>
-          <input type="text" id="i1" />
+          <input type="text" id="i1" name ="name"/>
           <button type="submit" className="btn">
             клик
           </button>

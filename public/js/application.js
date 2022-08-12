@@ -1,7 +1,7 @@
 const React = require('react');
 const { startGame } = document;
 
-startGame.addEventListener('sumbit', async (event) => {
+startGame.addEventListener('submit', async (event) => {
   const url = event.target.action;
   const userName = event.target.name.value;
   const { method } = event.target;
