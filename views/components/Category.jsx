@@ -4,13 +4,17 @@ const Layout = require("../Layout");
 const Category = ({ arrCategories }) => {
   return (
     <Layout>
-      <ul>
+      <div className="topic-box">
         {arrCategories.map((el) => (
-          <li key={el.id}>
-            <a href={`${el.id}`}>{el.topic}</a>
-          </li>
+          <a className="topic" href={`${el.id}`} key={el.id}>
+            {el.topic}
+          </a>
         ))}
-      </ul>
+
+        <a href="/" className="btn btn2">
+          это временная кнопка бро
+        </a>
+      </div>
     </Layout>
   );
 };

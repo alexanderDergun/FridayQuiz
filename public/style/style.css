@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
+/* only dsrk theme style не трогайте плес */
+
 body {
   --text-color: #222;
   --bkg-color: #fff;
@@ -34,8 +36,14 @@ span {
   color: var(--text-color);
 }
 
+/* only dsrk theme style не трогайте плес */
+
 .title {
   font-family: 'Bowlby One SC', cursive;
+}
+
+.wrapper {
+  position: relative;
 }
 
 .container {
@@ -44,7 +52,6 @@ span {
   align-items: center;
   flex-wrap: wrap;
   width: 60%;
-  height: 400px;
   margin: 50px auto;
 }
 
@@ -72,8 +79,15 @@ label {
   font-size: 20px;
 }
 
+
+/* checkbox dsrk theme */
 .controls {
-  margin-top: 400px;
+  width: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: static;
+  margin-top: 0px;
   margin-left: 20px;
   color: var(--text-color);
 }
@@ -82,12 +96,25 @@ label {
   cursor: pointer;
 }
 
+/* checkbox dsrk theme */
+
 .btn {
+  display: block;
+  font-family: 'Russo One', sans-serif;
   cursor: pointer;
-  width: 20%;
+  width: 250px;
   margin-top: 10px;
   transition: 0.2s;
   height: 40px;
+  color: #222;
+  margin: 10px auto;
+  background-color: rgb(206, 206, 206);
+  border: 0.3px solid black;
+  font-size: 14px;
+}
+
+.btn2 {
+  line-height: 40px;
 }
 
 .btn:hover {
@@ -97,6 +124,66 @@ label {
 
 /* select game page style */
 
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
 
+.topic {
+  display: block;
+  width: 100%;
+  height: 80px;
+  background: var(--bkg-color);
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: var(--text-color);
+  font-size: 24px;
+  line-height: 80px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  /* transition: 0.5s; */
+}
 
-/* game container style */
+.topic:hover {
+  transform: scale(0.9);
+  filter: brightness(0.95)
+}
+
+.topic-box {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.topic-box :last-child {
+  margin-top: 10px;
+}
+
+/* game style */
+
+.game {
+  min-width: 50%;
+  min-height: 300px;
+  border: 1px solid black;
+}
+
+.game_title {
+  text-align: center;
+}
+
+.questions_box {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+}
+
+.question {
+  width: 49%;
+  height: 100px;
+  text-align: center;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
