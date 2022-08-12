@@ -5,6 +5,7 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class Tq extends Model {
     static associate(models) {
+      
     }
   }
 
