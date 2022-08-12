@@ -32,7 +32,8 @@ body {
 
 h1,
 p,
-span {
+span,
+.greeting {
   color: var(--text-color);
 }
 
@@ -169,6 +170,13 @@ a {
 
 .game_title {
   text-align: center;
+}
+
+.greeting {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 10px;
+  margin-bottom: 40px;
 }
 
 .questions_box {
