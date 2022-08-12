@@ -8,8 +8,7 @@ gameRouter.get('/', async (req, res) => {
     raw: true,
     atttibutes: ['topic'],   
     })
-
-  console.log(arrCategories);
+    
     res.renderComponent(Category, {arrCategories})
 })
 
