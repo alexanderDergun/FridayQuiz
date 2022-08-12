@@ -13,10 +13,15 @@ const Layout = ({ children }) => {
         <title>FridayQuiz!</title>
       </head>
       <body>
-        {children}
-        <div className="controls">
-          <input type="checkbox" className="btn-toggle" />
-          <span>Дарк мод</span>
+        <div className="wrapper">
+          <div className="controls">
+            <input type="checkbox" className="btn-toggle" />
+            <span>кек</span>
+          </div>
+          <div className="container_title">
+            <h1 className="title">Quiz game</h1>
+          </div>
+          {children}
         </div>
       </body>
     </html>
