@@ -1,15 +1,18 @@
 const gameRouter = require('express').Router();
 
-const Category = require('../views/components/Category.jsx');
-const {Topic} = require('../db/models')
+const Game = require('../views/components/Game.jsx');
+const {Question} = require('../db/models')
 
-gameRouter.get('/', async (req, res) => {
-    const arrCategories = await Topic.findAll({
-    raw: true,
-    atttibutes: ['topic'],   
+
+gameRouter.get('/', (req, res) => {
+    const {id} = req.query;
+    const topic_id = Question.findAll({
+        include: topic_id
+
     })
-    
-    res.renderComponent(Category, {arrCategories})
+
+
+    res.renderComponent(Game)
 })
 
 
