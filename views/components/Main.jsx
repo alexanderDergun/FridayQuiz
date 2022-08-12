@@ -7,7 +7,7 @@ const Main = () => {
       <div className="container">
         <form action="/game" method="GET" name="startGame">
           <label htmlFor="i1">Введи своё имя, бро</label>
-          <input type="text" id="i1" />
+          <input type="text" id="i1" name="name" />
           <button type="submit" className="btn">
             клик
           </button>

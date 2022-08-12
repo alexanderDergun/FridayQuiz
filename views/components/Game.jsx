@@ -8,7 +8,7 @@ const Game = ({ props }) => {
         <div className="game_title">{props.question}</div>
         <div className="questions_box">
           {props.map((el) => (
-            <div className="question">{props.question}</div>
+            <div className="question">{el.var}</div>
           ))}
         </div>
       </div>
