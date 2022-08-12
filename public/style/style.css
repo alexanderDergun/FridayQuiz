@@ -82,6 +82,10 @@ label {
 
 /* checkbox dsrk theme */
 .controls {
+  width: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   position: static;
   margin-top: 0px;
   margin-left: 20px;

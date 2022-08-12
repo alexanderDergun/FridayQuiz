@@ -5,9 +5,10 @@ const btnToggle = document.querySelector(".btn-toggle");
 btnToggle.addEventListener("click", () => {
   checkbox.play();
 });
-// const topic = document.querySelectorAll(".topic");
-// topic.forEach((el) => {
-//   el.addEventListener("mousemove", () => {
-//     menu.play();
-//   });
-// });
+const topic = document.querySelectorAll(".topic");
+topic.forEach((el) => {
+  el.addEventListener("mouseenter", async () => {
+    // await menu.play();
+    console.log(1);
+  });
+});
