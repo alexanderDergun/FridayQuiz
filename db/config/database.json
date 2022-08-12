@@ -1,7 +1,7 @@
 {
   "development": {
-    "username": "Vadim",
-    "password": "12345",
+    "username": "user",
+    "password": "user",
     "database": "flashcard",
     "host": "127.0.0.1",
     "dialect": "postgres"
