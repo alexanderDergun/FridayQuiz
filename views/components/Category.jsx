@@ -5,13 +5,14 @@ const Category = ({ arrCategories, name }) => {
   return (
     <Layout>
       <div className="greeting">Привет, {name}</div>
-      <div className="topic-box">
+      <div className="topic-box" >
         {arrCategories.map((el) => (
-          <a className="topic" href={`/game/${el.id}`} key={el.id}>
+          <form action={`/game/${el.id}`} method="POST" className="topic">
+          <a  className="link" id={el.id} href="#" key={el.id}>
             {el.topic}
           </a>
+          </form>
         ))}
-
         <a href="/" className="btn btn2">
           это временная кнопка бро
         </a>
@@ -19,5 +20,5 @@ const Category = ({ arrCategories, name }) => {
     </Layout>
   );
 };
-
+// 
 module.exports = Category;

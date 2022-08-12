@@ -14,6 +14,6 @@ const PORT = process.env.PORT ?? 3000;
 
 app.use('/', mainRouter);
 app.use('/game', categoryRouter);
-app.use('/game/:id', gameRouter);
+app.use('/:id', gameRouter);
 
 app.listen(PORT, () => console.log(chalk.bgBlue(" Здарова братик! ")));
